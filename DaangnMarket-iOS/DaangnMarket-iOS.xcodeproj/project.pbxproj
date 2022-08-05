@@ -11,6 +11,10 @@
 		4A634F40289D9EA600F9AC42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F3F289D9EA600F9AC42 /* SceneDelegate.swift */; };
 		4A634F47289D9EA700F9AC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A634F46289D9EA700F9AC42 /* Assets.xcassets */; };
 		4A634F4A289D9EA700F9AC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A634F48289D9EA700F9AC42 /* LaunchScreen.storyboard */; };
+		4A634F5D289DA13F00F9AC42 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F5C289DA13F00F9AC42 /* Screen.swift */; };
+		4A634F5F289DA14900F9AC42 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F5E289DA14900F9AC42 /* Network.swift */; };
+		4A634F61289DA14F00F9AC42 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F60289DA14F00F9AC42 /* Extension.swift */; };
+		4A634F63289DA15700F9AC42 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F62289DA15700F9AC42 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		4A634F46289D9EA700F9AC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A634F49289D9EA700F9AC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A634F4B289D9EA700F9AC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A634F5C289DA13F00F9AC42 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		4A634F5E289DA14900F9AC42 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4A634F60289DA14F00F9AC42 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4A634F62289DA15700F9AC42 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,6 @@
 				4A634F54289D9FEC00F9AC42 /* Network */,
 				4A634F51289D9FA600F9AC42 /* Global */,
 				4A634F56289D9FFD00F9AC42 /* Resoruce */,
-				4A634F46289D9EA700F9AC42 /* Assets.xcassets */,
 			);
 			path = "DaangnMarket-iOS";
 			sourceTree = "<group>";
@@ -73,6 +80,7 @@
 		4A634F52289D9FD400F9AC42 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				4A634F62289DA15700F9AC42 /* Constant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -80,6 +88,7 @@
 		4A634F53289D9FDB00F9AC42 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4A634F60289DA14F00F9AC42 /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -87,6 +96,7 @@
 		4A634F54289D9FEC00F9AC42 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4A634F5E289DA14900F9AC42 /* Network.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -94,6 +104,7 @@
 		4A634F55289D9FF700F9AC42 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				4A634F5C289DA13F00F9AC42 /* Screen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 		4A634F59289DA04800F9AC42 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
+				4A634F46289D9EA700F9AC42 /* Assets.xcassets */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -211,8 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A634F61289DA14F00F9AC42 /* Extension.swift in Sources */,
 				4A634F3E289D9EA600F9AC42 /* AppDelegate.swift in Sources */,
 				4A634F40289D9EA600F9AC42 /* SceneDelegate.swift in Sources */,
+				4A634F5F289DA14900F9AC42 /* Network.swift in Sources */,
+				4A634F5D289DA13F00F9AC42 /* Screen.swift in Sources */,
+				4A634F63289DA15700F9AC42 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
