@@ -11,17 +11,17 @@ extension Constant {
     struct Image {
         // icn
         static let icChatSelected = UIImage(named: "isChatSelected")!
-        static let icChatUnselected = UIImage(named: "icChatUnselected")!
+        static let icChat = UIImage(named: "icChat")!
         static let icCheckSelected = UIImage(systemName: "icCheckSelected")!
-        static let icCheckUnselected = UIImage(systemName: "icCheckUnselected")!
+        static let icCheck = UIImage(systemName: "icCheck")!
         static let icHomeSelected = UIImage(systemName: "icHomeSelected")!
-        static let icHomeUnselected = UIImage(systemName: "icHomeUnselected")!
+        static let icHome = UIImage(systemName: "icHome")!
         static let icMyDaangnSelected = UIImage(systemName: "icMyDaangnSelected")!
-        static let icMyDaangnUnselected = UIImage(systemName: "icMyDaangnUnselected")!
+        static let icMyDaangn = UIImage(systemName: "icMyDaangn")!
         static let icMyPlaceSelected = UIImage(systemName: "icMyPlaceSelected")!
-        static let icMyPlaceUnselected = UIImage(systemName: "icMyPlaceUnselected")!
+        static let icMyPlace = UIImage(systemName: "icMyPlace")!
         static let icNeighbohoodSelected = UIImage(systemName: "icNeighbohoodSelected")!
-        static let icNeighbohoodUnselected = UIImage(systemName: "icNeighbohoodUnselected")!
+        static let icNeighbohood = UIImage(systemName: "icNeighbohood")!
         static let icBell = UIImage(systemName: "icBell")!
         static let icFace = UIImage(systemName: "icFace")!
         static let icFillter = UIImage(systemName: "icFillter")!
