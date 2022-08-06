@@ -64,7 +64,6 @@
 				AAB47FCD8D3CDC2F9B7FD785 /* Pods-DaangnMarket-iOS.debug.xcconfig */,
 				CA8FC53D5EFADFF6FC41D95F /* Pods-DaangnMarket-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,9 +88,9 @@
 		4A634F3C289D9EA600F9AC42 /* DaangnMarket-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4A634F55289D9FF700F9AC42 /* Screen */,
-				4A634F54289D9FEC00F9AC42 /* Network */,
 				4A634F51289D9FA600F9AC42 /* Global */,
+				4A634F54289D9FEC00F9AC42 /* Network */,
+				4A634F55289D9FF700F9AC42 /* Screen */,
 				4A634F56289D9FFD00F9AC42 /* Resoruce */,
 			);
 			path = "DaangnMarket-iOS";
