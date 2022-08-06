@@ -17,6 +17,7 @@
 		4A634F61289DA14F00F9AC42 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F60289DA14F00F9AC42 /* Extension.swift */; };
 		4A634F63289DA15700F9AC42 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F62289DA15700F9AC42 /* Image.swift */; };
 		4A634F65289DA68200F9AC42 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F64289DA68200F9AC42 /* Constant.swift */; };
+		6C99098698419A3329642D41 /* Pods_DaangnMarket_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF2CF822AE236AF6B3C16A2 /* Pods_DaangnMarket_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		4A634F60289DA14F00F9AC42 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		4A634F62289DA15700F9AC42 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4A634F64289DA68200F9AC42 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7BF2CF822AE236AF6B3C16A2 /* Pods_DaangnMarket_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaangnMarket_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB47FCD8D3CDC2F9B7FD785 /* Pods-DaangnMarket-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaangnMarket-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CA8FC53D5EFADFF6FC41D95F /* Pods-DaangnMarket-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaangnMarket-iOS.release.xcconfig"; path = "Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C99098698419A3329642D41 /* Pods_DaangnMarket_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06C3D5A006D82DE4FBA1255F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BF2CF822AE236AF6B3C16A2 /* Pods_DaangnMarket_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A49ED7CE11B18BA0B17DBAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAB47FCD8D3CDC2F9B7FD785 /* Pods-DaangnMarket-iOS.debug.xcconfig */,
+				CA8FC53D5EFADFF6FC41D95F /* Pods-DaangnMarket-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4A634F31289D9EA600F9AC42 = {
 			isa = PBXGroup;
 			children = (
 				4A634F3C289D9EA600F9AC42 /* DaangnMarket-iOS */,
 				4A634F3B289D9EA600F9AC42 /* Products */,
+				2A49ED7CE11B18BA0B17DBAD /* Pods */,
+				06C3D5A006D82DE4FBA1255F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,9 +191,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A634F4E289D9EA700F9AC42 /* Build configuration list for PBXNativeTarget "DaangnMarket-iOS" */;
 			buildPhases = (
+				BCC92E15B3874B7203D0A15B /* [CP] Check Pods Manifest.lock */,
 				4A634F36289D9EA600F9AC42 /* Sources */,
 				4A634F37289D9EA600F9AC42 /* Frameworks */,
 				4A634F38289D9EA600F9AC42 /* Resources */,
+				70E03D5958ACD30ED6194F5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +250,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70E03D5958ACD30ED6194F5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC92E15B3874B7203D0A15B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaangnMarket-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A634F36289D9EA600F9AC42 /* Sources */ = {
@@ -370,6 +439,7 @@
 		};
 		4A634F4F289D9EA700F9AC42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB47FCD8D3CDC2F9B7FD785 /* Pods-DaangnMarket-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,6 +467,7 @@
 		};
 		4A634F50289D9EA700F9AC42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8FC53D5EFADFF6FC41D95F /* Pods-DaangnMarket-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
