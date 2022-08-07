@@ -9,18 +9,12 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    // MARK: - Property
-    
-    // MARK: - UI Property
-    
     // MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabbar()
     }
-    
-    // MARK: - @objc
     
     // MARK: - Custom Method
     
