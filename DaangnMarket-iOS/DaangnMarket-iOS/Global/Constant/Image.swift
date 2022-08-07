@@ -10,33 +10,33 @@ import UIKit
 extension Constant {
     struct Image {
         // icn
-        static let icChatSelected = UIImage(named: "isChatSelected")!
-        static let icChat = UIImage(named: "icChat")!
-        static let icCheckSelected = UIImage(systemName: "icCheckSelected")!
-        static let icCheck = UIImage(systemName: "icCheck")!
-        static let icHomeSelected = UIImage(systemName: "icHomeSelected")!
-        static let icHome = UIImage(systemName: "icHome")!
-        static let icMyDaangnSelected = UIImage(systemName: "icMyDaangnSelected")!
-        static let icMyDaangn = UIImage(systemName: "icMyDaangn")!
-        static let icMyPlaceSelected = UIImage(systemName: "icMyPlaceSelected")!
-        static let icMyPlace = UIImage(systemName: "icMyPlace")!
-        static let icNeighbohoodSelected = UIImage(systemName: "icNeighbohoodSelected")!
-        static let icNeighbohood = UIImage(systemName: "icNeighbohood")!
-        static let icBell = UIImage(systemName: "icBell")!
-        static let icFace = UIImage(systemName: "icFace")!
-        static let icFillter = UIImage(systemName: "icFillter")!
-        static let icHeartOn = UIImage(systemName: "icHeartOn")!
-        static let icHeartOff = UIImage(systemName: "icHeartOff")!
-        static let icMenu = UIImage(systemName: "icMenu")!
-        static let icMore = UIImage(systemName: "icMore")!
-        static let icOften = UIImage(systemName: "icOften")!
-        static let icSearch = UIImage(systemName: "icSearch")!
+        static let icChatSelected = UIImage(named: "isChatSelected")
+        static let icChat = UIImage(named: "icChat")
+        static let icCheckSelected = UIImage(named: "icCheckSelected")
+        static let icCheck = UIImage(named: "icCheck")
+        static let icHomeSelected = UIImage(named: "icHomeSelected")
+        static let icHome = UIImage(named: "icHome")
+        static let icMyDaangnSelected = UIImage(named: "icMyDaangnSelected")
+        static let icMyDaangn = UIImage(named: "icMyDaangn")
+        static let icMyPlaceSelected = UIImage(named: "icMyPlaceSelected")
+        static let icMyPlace = UIImage(named: "icMyPlace")
+        static let icNeighbohoodSelected = UIImage(named: "icNeighbohoodSelected")
+        static let icNeighbohood = UIImage(named: "icNeighbohood")
+        static let icBell = UIImage(named: "icBell")
+        static let icFace = UIImage(named: "icFace")
+        static let icFillter = UIImage(named: "icFillter")
+        static let icHeartOn = UIImage(named: "icHeartOn")
+        static let icHeartOff = UIImage(named: "icHeartOff")
+        static let icMenu = UIImage(named: "icMenu")
+        static let icMore = UIImage(named: "icMore")
+        static let icOften = UIImage(named: "icOften")
+        static let icSearch = UIImage(named: "icSearch")
         
         //image
-        static let image1 = UIImage(systemName: "image1")!
-        static let image2 = UIImage(systemName: "image2")!
-        static let image3 = UIImage(systemName: "image3")!
-        static let image4 = UIImage(systemName: "image4")!
-        static let image5 = UIImage(systemName: "image5")!
+        static let image1 = UIImage(named: "image1")
+        static let image2 = UIImage(named: "image2")
+        static let image3 = UIImage(named: "image3")
+        static let image4 = UIImage(named: "image4")
+        static let image5 = UIImage(named: "image5")
     }
 }
