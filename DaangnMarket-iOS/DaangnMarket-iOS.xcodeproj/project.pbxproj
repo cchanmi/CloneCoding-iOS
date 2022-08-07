@@ -12,11 +12,16 @@
 		4A634F40289D9EA600F9AC42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F3F289D9EA600F9AC42 /* SceneDelegate.swift */; };
 		4A634F47289D9EA700F9AC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A634F46289D9EA700F9AC42 /* Assets.xcassets */; };
 		4A634F4A289D9EA700F9AC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A634F48289D9EA700F9AC42 /* LaunchScreen.storyboard */; };
-		4A634F5D289DA13F00F9AC42 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F5C289DA13F00F9AC42 /* Screen.swift */; };
 		4A634F5F289DA14900F9AC42 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F5E289DA14900F9AC42 /* Network.swift */; };
 		4A634F61289DA14F00F9AC42 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F60289DA14F00F9AC42 /* Extension.swift */; };
 		4A634F63289DA15700F9AC42 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F62289DA15700F9AC42 /* Image.swift */; };
 		4A634F65289DA68200F9AC42 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F64289DA68200F9AC42 /* Constant.swift */; };
+		4A9916B8289F6D0600B329A7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916B7289F6D0600B329A7 /* TabBarController.swift */; };
+		4A9916BB289F6D5300B329A7 /* NeighborhoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916BA289F6D5300B329A7 /* NeighborhoodViewController.swift */; };
+		4A9916BD289F6D5D00B329A7 /* MyPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916BC289F6D5D00B329A7 /* MyPlaceViewController.swift */; };
+		4A9916BF289F6D6400B329A7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916BE289F6D6400B329A7 /* ChatViewController.swift */; };
+		4A9916C1289F6D6B00B329A7 /* MyDaangnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916C0289F6D6B00B329A7 /* MyDaangnViewController.swift */; };
+		4A9916C4289F6DD600B329A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916C3289F6DD600B329A7 /* HomeViewController.swift */; };
 		6C99098698419A3329642D41 /* Pods_DaangnMarket_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF2CF822AE236AF6B3C16A2 /* Pods_DaangnMarket_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,11 +33,16 @@
 		4A634F46289D9EA700F9AC42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A634F49289D9EA700F9AC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A634F4B289D9EA700F9AC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A634F5C289DA13F00F9AC42 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		4A634F5E289DA14900F9AC42 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		4A634F60289DA14F00F9AC42 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		4A634F62289DA15700F9AC42 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		4A634F64289DA68200F9AC42 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4A9916B7289F6D0600B329A7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4A9916BA289F6D5300B329A7 /* NeighborhoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodViewController.swift; sourceTree = "<group>"; };
+		4A9916BC289F6D5D00B329A7 /* MyPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceViewController.swift; sourceTree = "<group>"; };
+		4A9916BE289F6D6400B329A7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		4A9916C0289F6D6B00B329A7 /* MyDaangnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDaangnViewController.swift; sourceTree = "<group>"; };
+		4A9916C3289F6DD600B329A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7BF2CF822AE236AF6B3C16A2 /* Pods_DaangnMarket_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaangnMarket_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB47FCD8D3CDC2F9B7FD785 /* Pods-DaangnMarket-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaangnMarket-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CA8FC53D5EFADFF6FC41D95F /* Pods-DaangnMarket-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaangnMarket-iOS.release.xcconfig"; path = "Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +144,9 @@
 		4A634F55289D9FF700F9AC42 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				4A634F5C289DA13F00F9AC42 /* Screen.swift */,
+				4A9916B3289F6CE200B329A7 /* TabBar */,
+				4A9916B4289F6CE800B329A7 /* Others */,
+				4A9916B5289F6CEC00B329A7 /* Home */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -181,6 +193,57 @@
 			children = (
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		4A9916B3289F6CE200B329A7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4A9916B6289F6CEF00B329A7 /* Controller */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4A9916B4289F6CE800B329A7 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				4A9916B9289F6D2700B329A7 /* Controller */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		4A9916B5289F6CEC00B329A7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A9916C2289F6DCE00B329A7 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4A9916B6289F6CEF00B329A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A9916B7289F6D0600B329A7 /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A9916B9289F6D2700B329A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A9916BA289F6D5300B329A7 /* NeighborhoodViewController.swift */,
+				4A9916BC289F6D5D00B329A7 /* MyPlaceViewController.swift */,
+				4A9916BE289F6D6400B329A7 /* ChatViewController.swift */,
+				4A9916C0289F6D6B00B329A7 /* MyDaangnViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A9916C2289F6DCE00B329A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A9916C3289F6DD600B329A7 /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,13 +360,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9916BB289F6D5300B329A7 /* NeighborhoodViewController.swift in Sources */,
+				4A9916C1289F6D6B00B329A7 /* MyDaangnViewController.swift in Sources */,
 				4A634F65289DA68200F9AC42 /* Constant.swift in Sources */,
+				4A9916BF289F6D6400B329A7 /* ChatViewController.swift in Sources */,
+				4A9916B8289F6D0600B329A7 /* TabBarController.swift in Sources */,
 				4A634F61289DA14F00F9AC42 /* Extension.swift in Sources */,
 				4A634F3E289D9EA600F9AC42 /* AppDelegate.swift in Sources */,
 				4A634F40289D9EA600F9AC42 /* SceneDelegate.swift in Sources */,
+				4A9916BD289F6D5D00B329A7 /* MyPlaceViewController.swift in Sources */,
 				4A634F5F289DA14900F9AC42 /* Network.swift in Sources */,
 				4A1A1E13289E670200FCC479 /* UIColor+.swift in Sources */,
-				4A634F5D289DA13F00F9AC42 /* Screen.swift in Sources */,
+				4A9916C4289F6DD600B329A7 /* HomeViewController.swift in Sources */,
 				4A634F63289DA15700F9AC42 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,10 +513,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DaangnMarket-iOS/Info.plist";
+				INFOPLIST_FILE = "DaangnMarket-iOS/Resoruce/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,10 +540,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DaangnMarket-iOS/Info.plist";
+				INFOPLIST_FILE = "DaangnMarket-iOS/Resoruce/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

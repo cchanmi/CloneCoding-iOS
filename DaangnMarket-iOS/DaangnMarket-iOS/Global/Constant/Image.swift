@@ -21,7 +21,7 @@ extension Constant {
         static let icMyPlaceSelected = UIImage(named: "icMyPlaceSelected")
         static let icMyPlace = UIImage(named: "icMyPlace")
         static let icNeighbohoodSelected = UIImage(named: "icNeighbohoodSelected")
-        static let icNeighbohood = UIImage(named: "icNeighbohood")
+        static let icNeighbohood = UIImage(named: "icNeighborhood")
         static let icBell = UIImage(named: "icBell")
         static let icFace = UIImage(named: "icFace")
         static let icFillter = UIImage(named: "icFillter")
