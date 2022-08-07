@@ -9,11 +9,14 @@ import UIKit
 
 import SnapKit
 import Then
-import SwiftUI
 
 final class HomeViewController: UIViewController {
     
     // MARK: - UI Property
+    
+    let tableView = UITableView().then {
+        $0.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.identifier)
+    }
     
     var navigationBar = UIView().then {
         $0.backgroundColor = .white
@@ -56,6 +59,7 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         hideNavigationBar()
         setLayout()
+        setTableView()
     }
     
     // MARK: - Custom Method
@@ -64,11 +68,17 @@ final class HomeViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    private func setTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
     private func setLayout() {
         view.addSubviews([navigationBar,
                           navigationLine,
                           placeLabel,
-                          naviButtonStackView])
+                          naviButtonStackView,
+                          tableView])
         naviButtonStackView.addArrangedSubview(searchButton)
         naviButtonStackView.addArrangedSubview(menuButton)
         naviButtonStackView.addArrangedSubview(bellButton)
@@ -91,5 +101,22 @@ final class HomeViewController: UIViewController {
             $0.centerY.equalTo(navigationBar)
             $0.trailing.equalToSuperview().inset(16)
         }
+        
+        tableView.snp.makeConstraints {
+            $0.top.equalTo(navigationBar.snp.bottom)
+            $0.leading.trailing.bottom.equalTo(view.safeAreaLayoutGuide)
+        }
+    }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as? HomeTableViewCell else { return UITableViewCell() }
+        cell.setData(HomeDataModel.itemImages[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return HomeDataModel.itemImages.count
     }
 }
