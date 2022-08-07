@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NeighborhoodViewController: UIViewController {
+final class NeighborhoodViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

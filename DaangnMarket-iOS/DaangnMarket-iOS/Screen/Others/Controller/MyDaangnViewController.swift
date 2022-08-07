@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyDaangnViewController: UIViewController {
+final class MyDaangnViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
