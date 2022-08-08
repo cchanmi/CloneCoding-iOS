@@ -11,7 +11,10 @@ import SnapKit
 import Then
 
 final class DetailViewController: UIViewController {
-
+    
+    // MARK: Property
+    
+    var imageData: UIImage?
     
     // MARK: - UI Property
     
@@ -71,14 +74,43 @@ final class DetailViewController: UIViewController {
         $0.layer.cornerRadius = 4
     }
     
+    var contentScrollerView = UIScrollView().then {
+        $0.backgroundColor = .yellow
+        $0.showsVerticalScrollIndicator = false
+    }
+    
+    var contentView = UIView().then {
+        $0.backgroundColor = .blue
+    }
+    
+    let imageCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.isScrollEnabled = true
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.identifier)
+        
+        return collectionView
+    }()
+    
     // MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setScrollerView()
+        setCollectionView()
     }
     
     // MARK: - Custom Method
+    
+    private func setCollectionView() {
+        imageCollectionView.delegate = self
+        imageCollectionView.dataSource = self
+    }
     
     private func setUI() {
         view.backgroundColor = .white
@@ -144,5 +176,43 @@ final class DetailViewController: UIViewController {
             $0.width.equalTo(122)
             $0.height.equalTo(41)
         }
+    }
+    
+    private func setScrollerView() {
+        
+        view.addSubview(contentScrollerView)
+        contentScrollerView.addSubview(contentView)
+        contentView.addSubview(imageCollectionView)
+        
+        contentScrollerView.snp.makeConstraints {
+            $0.top.equalTo(navigationBar.snp.bottom)
+            $0.leading.trailing.equalToSuperview()
+            $0.bottom.equalTo(bottomView.snp.top)
+        }
+        
+        contentView.snp.makeConstraints {
+            $0.top.leading.trailing.bottom.equalTo(contentScrollerView)
+            $0.width.equalTo(UIScreen.main.bounds.size.width)
+            $0.height.equalTo(1500)
+        }
+        
+        imageCollectionView.snp.makeConstraints {
+            $0.top.leading.trailing.equalTo(contentView)
+            $0.height.equalTo(UIScreen.main.bounds.size.width)
+        }
+    }
+}
+
+extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.identifier, for: indexPath) as? ImageCollectionViewCell else { return UICollectionViewCell() }
+        if let imageData = imageData as? UIImage {
+            cell.setData(imageData)
+        }
+        return cell
     }
 }
