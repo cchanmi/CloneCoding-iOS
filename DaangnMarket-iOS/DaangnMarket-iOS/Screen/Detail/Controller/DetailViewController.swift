@@ -151,6 +151,50 @@ final class DetailViewController: UIViewController {
         return collectionView
     }()
     
+    var statusButton = UIButton().then {
+        $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.systemGray4.cgColor
+        $0.layer.cornerRadius = 4
+    }
+    
+    var statusLabel = UILabel().then {
+        $0.text = "판매중"
+        $0.font = .systemFont(ofSize: 14, weight: .bold)
+    }
+    
+    var arrowImage = UIImageView().then {
+        $0.image = Constant.Image.icArrow
+    }
+    
+    var itemNameLabel = UILabel().then {
+        $0.text = "최태성 한능검 심화 기출 500제"
+        $0.font = .systemFont(ofSize: 19, weight: .bold)
+    }
+    
+    var categoryLabel = UILabel().then {
+        $0.text = "도서/티켓/음반"
+        $0.font = .systemFont(ofSize: 13, weight: .medium)
+        $0.textColor = .systemGray2
+    }
+    
+    var createdTimeLabel = UILabel().then {
+        $0.text = "5분 전"
+        $0.font = .systemFont(ofSize: 13, weight: .medium)
+        $0.textColor = .systemGray2
+    }
+    
+    var contentLabel = UILabel().then {
+        $0.text = "새 책입니다."
+        $0.numberOfLines = 0
+        $0.font = .systemFont(ofSize: 15, weight: .medium)
+    }
+    
+    var referenceLabel = UILabel().then {
+        $0.text = "조회 2"
+        $0.font = .systemFont(ofSize: 13, weight: .medium)
+        $0.textColor = .systemGray2
+    }
+    
     // MARK: - Life Cycle
 
     override func viewDidLoad() {
@@ -234,7 +278,6 @@ final class DetailViewController: UIViewController {
     }
     
     private func setScrollerView() {
-        
         view.addSubview(contentScrollerView)
         contentScrollerView.addSubview(contentView)
         contentView.addSubview(imageCollectionView)
@@ -248,7 +291,6 @@ final class DetailViewController: UIViewController {
         contentView.snp.makeConstraints {
             $0.top.leading.trailing.bottom.equalTo(contentScrollerView)
             $0.width.equalTo(UIScreen.main.bounds.size.width)
-            $0.height.equalTo(1500)
         }
         
         imageCollectionView.snp.makeConstraints {
@@ -307,6 +349,60 @@ final class DetailViewController: UIViewController {
         userLabelStackView.snp.makeConstraints {
             $0.centerY.equalTo(profileImage)
             $0.leading.equalTo(profileImage.snp.trailing).offset(9)
+        }
+        
+        contentView.addSubviews([statusButton,
+                                 statusLabel,
+                                 arrowImage,
+                                 itemNameLabel,
+                                 categoryLabel,
+                                 createdTimeLabel,
+                                 contentLabel,
+                                 createdTimeLabel,
+                                 referenceLabel])
+        
+        statusButton.snp.makeConstraints {
+            $0.top.equalTo(titleView.snp.bottom).offset(18)
+            $0.leading.equalToSuperview().inset(16)
+            $0.width.equalTo(100)
+            $0.height.equalTo(40)
+        }
+        
+        statusLabel.snp.makeConstraints {
+            $0.centerY.equalTo(statusButton)
+            $0.leading.equalTo(statusButton.snp.leading).inset(13)
+        }
+        
+        arrowImage.snp.makeConstraints {
+            $0.centerY.equalTo(statusButton)
+            $0.trailing.equalTo(statusButton.snp.trailing).inset(13)
+        }
+        
+        itemNameLabel.snp.makeConstraints {
+            $0.top.equalTo(statusButton.snp.bottom).offset(15)
+            $0.leading.equalToSuperview().inset(15)
+        }
+        
+        categoryLabel.snp.makeConstraints {
+            $0.top.equalTo(itemNameLabel.snp.bottom).offset(8)
+            $0.leading.equalTo(itemNameLabel.snp.leading)
+        }
+        
+        createdTimeLabel.snp.makeConstraints {
+            $0.top.equalTo(categoryLabel.snp.top)
+            $0.leading.equalTo(categoryLabel.snp.trailing).offset(9)
+        }
+        
+        contentLabel.snp.makeConstraints {
+            $0.top.equalTo(categoryLabel.snp.bottom).offset(14)
+            $0.leading.equalTo(categoryLabel.snp.leading)
+            $0.trailing.equalToSuperview().offset(-15)
+        }
+        
+        referenceLabel.snp.makeConstraints {
+            $0.top.equalTo(contentLabel.snp.bottom).offset(12)
+            $0.leading.equalTo(contentLabel.snp.leading)
+            $0.bottom.equalTo(contentView.snp.bottom)
         }
     }
 }
