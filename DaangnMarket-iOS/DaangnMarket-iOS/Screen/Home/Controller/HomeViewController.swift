@@ -119,4 +119,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return HomeDataModel.itemImages.count
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewController()
+        detailVC.imageData = HomeDataModel.itemImages[indexPath.row].itemImage
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }

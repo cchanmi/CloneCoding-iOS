@@ -33,6 +33,7 @@ final class DetailViewController: UIViewController {
     var homeButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icBackHome, for: .normal)
+        $0.addTarget(self, action: #selector(homeButtonDidTap), for: .touchUpInside)
     }
     
     var moreButton = UIButton().then {
@@ -89,7 +90,6 @@ final class DetailViewController: UIViewController {
     
     var profileImage = UIImageView().then {
         $0.image = Constant.Image.image5
-//        $0.layer.cornerRadius =
     }
     
     var userNameLabel = UILabel().then {
@@ -202,6 +202,12 @@ final class DetailViewController: UIViewController {
         setUI()
         setScrollerView()
         setCollectionView()
+    }
+    
+    // MARK: - @objc
+    
+    @objc func homeButtonDidTap() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Custom Method
