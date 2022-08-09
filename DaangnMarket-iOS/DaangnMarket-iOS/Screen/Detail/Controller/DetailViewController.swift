@@ -75,12 +75,67 @@ final class DetailViewController: UIViewController {
     }
     
     var contentScrollerView = UIScrollView().then {
-        $0.backgroundColor = .yellow
+        $0.backgroundColor = .white
         $0.showsVerticalScrollIndicator = false
     }
     
     var contentView = UIView().then {
-        $0.backgroundColor = .blue
+        $0.backgroundColor = .white
+    }
+    
+    var titleView = UIView().then {
+        $0.backgroundColor = .white
+    }
+    
+    var profileImage = UIImageView().then {
+        $0.image = Constant.Image.image5
+//        $0.layer.cornerRadius =
+    }
+    
+    var userNameLabel = UILabel().then {
+        $0.text = "짠미"
+        $0.font = .systemFont(ofSize: 16, weight: .bold)
+    }
+    
+    var placeLabel = UILabel().then {
+        $0.text = "개봉동"
+        $0.font = .systemFont(ofSize: 12, weight: .light)
+    }
+    
+    var userLabelStackView = UIStackView().then {
+        $0.axis = .vertical
+        $0.spacing = 3
+        $0.alignment = .leading
+    }
+    
+    var temperature = UILabel().then {
+        $0.text = "36.5℃"
+        $0.font = .systemFont(ofSize: 16, weight: .bold)
+        $0.textColor = .blue
+    }
+    
+    var progessBar = UIProgressView().then {
+        $0.progress = 0.1
+    }
+    
+    var temperatureStackView = UIStackView().then {
+        $0.axis = .vertical
+        $0.spacing = 3
+        $0.alignment = .leading
+    }
+    
+    var smaileImageView = UIImageView().then {
+        $0.image = Constant.Image.icFace
+    }
+    
+    var mannerTemperature = UILabel().then {
+        $0.text = "매너온도"
+        $0.font = .systemFont(ofSize: 11, weight: .medium)
+        $0.textColor = .systemGray2
+    }
+    
+    var titleViewBottomLine = UIView().then {
+        $0.backgroundColor = .systemGray5
     }
     
     let imageCollectionView: UICollectionView = {
@@ -199,6 +254,59 @@ final class DetailViewController: UIViewController {
         imageCollectionView.snp.makeConstraints {
             $0.top.leading.trailing.equalTo(contentView)
             $0.height.equalTo(UIScreen.main.bounds.size.width)
+        }
+        
+        contentView.addSubview(titleView)
+        titleView.addSubviews([profileImage,
+                               userLabelStackView,
+                               temperatureStackView,
+                               smaileImageView,
+                               mannerTemperature,
+                               titleViewBottomLine])
+        
+        userLabelStackView.addArrangedSubview(userNameLabel)
+        userLabelStackView.addArrangedSubview(placeLabel)
+        
+        temperatureStackView.addArrangedSubview(temperature)
+        temperatureStackView.addArrangedSubview(progessBar)
+        
+        titleView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.top.equalTo(imageCollectionView.snp.bottom)
+        }
+        
+        temperatureStackView.snp.makeConstraints {
+            $0.top.equalTo(titleView.snp.top).offset(14)
+            $0.trailing.equalTo(smaileImageView.snp.leading).offset(-9)
+        }
+        
+        smaileImageView.snp.makeConstraints {
+            $0.width.height.equalTo(24)
+            $0.trailing.equalToSuperview().offset(-15)
+            $0.centerY.equalTo(temperatureStackView)
+        }
+        
+        mannerTemperature.snp.makeConstraints {
+            $0.top.equalTo(temperatureStackView.snp.bottom).offset(9)
+            $0.trailing.equalToSuperview().offset(-15)
+            $0.bottom.equalTo(titleViewBottomLine).inset(12)
+        }
+        
+        titleViewBottomLine.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview().inset(15)
+            $0.bottom.equalTo(titleView.snp.bottom)
+            $0.height.equalTo(1)
+        }
+        
+        profileImage.snp.makeConstraints {
+            $0.leading.equalToSuperview().inset(16)
+            $0.centerY.equalTo(titleView)
+            $0.height.width.equalTo(40)
+        }
+        
+        userLabelStackView.snp.makeConstraints {
+            $0.centerY.equalTo(profileImage)
+            $0.leading.equalTo(profileImage.snp.trailing).offset(9)
         }
     }
 }
