@@ -18,6 +18,7 @@ final class ImageCollectionViewCell: UICollectionViewCell {
     
     var itemImage = UIImageView().then {
         $0.image = Constant.Image.image3
+        $0.contentMode = .scaleAspectFill
     }
     
     // MARK: - Initialize

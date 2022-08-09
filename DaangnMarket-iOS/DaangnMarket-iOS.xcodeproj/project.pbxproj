@@ -12,6 +12,7 @@
 		4A191605289FB65400437002 /* HomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A191604289FB65400437002 /* HomeDataModel.swift */; };
 		4A1A1E13289E670200FCC479 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1A1E12289E670200FCC479 /* UIColor+.swift */; };
 		4A2ADA16289FE2F400B84576 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ADA15289FE2F400B84576 /* DetailViewController.swift */; };
+		4A2ADA1B28A010B300B84576 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ADA1A28A010B300B84576 /* ImageCollectionViewCell.swift */; };
 		4A634F3E289D9EA600F9AC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F3D289D9EA600F9AC42 /* AppDelegate.swift */; };
 		4A634F40289D9EA600F9AC42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F3F289D9EA600F9AC42 /* SceneDelegate.swift */; };
 		4A634F47289D9EA700F9AC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A634F46289D9EA700F9AC42 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		4A191604289FB65400437002 /* HomeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataModel.swift; sourceTree = "<group>"; };
 		4A1A1E12289E670200FCC479 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		4A2ADA15289FE2F400B84576 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4A2ADA1A28A010B300B84576 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A634F3A289D9EA600F9AC42 /* DaangnMarket-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DaangnMarket-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A634F3D289D9EA600F9AC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A634F3F289D9EA600F9AC42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		4A2ADA13289FE26900B84576 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				4A2ADA1728A00EB900B84576 /* View */,
 				4A2ADA14289FE2E000B84576 /* Controller */,
 			);
 			path = Detail;
@@ -113,6 +116,14 @@
 				4A2ADA15289FE2F400B84576 /* DetailViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A2ADA1728A00EB900B84576 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A2ADA1A28A010B300B84576 /* ImageCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4A634F31289D9EA600F9AC42 = {
@@ -401,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2ADA1B28A010B300B84576 /* ImageCollectionViewCell.swift in Sources */,
 				4A9916BB289F6D5300B329A7 /* NeighborhoodViewController.swift in Sources */,
 				4A9916C1289F6D6B00B329A7 /* MyDaangnViewController.swift in Sources */,
 				4A191605289FB65400437002 /* HomeDataModel.swift in Sources */,

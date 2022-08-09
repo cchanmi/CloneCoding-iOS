@@ -10,11 +10,11 @@ import UIKit
 import SnapKit
 import Then
 
-class HomeTableViewCell: UITableViewCell {
-    
-    // MARK: - Property
+final class HomeTableViewCell: UITableViewCell {
     
     static let identifier = "HomeTableViewCell"
+    
+    // MARK: - Property
     
     var itemImageView = UIImageView().then {
         $0.image = Constant.Image.image1

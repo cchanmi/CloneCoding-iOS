@@ -32,6 +32,7 @@ extension Constant {
         static let icOften = UIImage(named: "icOften")
         static let icSearch = UIImage(named: "icSearch")
         static let icBackHome = UIImage(named: "icBackHome")
+        static let icArrow = UIImage(named: "arrow")
         
         //image
         static let image1 = UIImage(named: "image1")
