@@ -37,6 +37,7 @@ final class HomeTableViewCell: UITableViewCell {
         $0.font = .systemFont(ofSize: 11, weight: .medium)
         $0.textColor = .lightGray
     }
+    
     var priceLabel = UILabel().then {
         $0.text = "25,000원"
         $0.font = .systemFont(ofSize: 15, weight: .bold)
@@ -48,29 +49,29 @@ final class HomeTableViewCell: UITableViewCell {
     }
     
     // MARK: - Life Cycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setLayout()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        setLayout()
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Custom Method
     
     private func setLayout() {
-        self.addSubviews([itemImageView,
-                          itemNameLable,
-                          labelStackView,
-                          priceLabel])
+        contentView.addSubviews([itemImageView,
+                                 itemNameLable,
+                                 labelStackView,
+                                 priceLabel])
         labelStackView.addArrangedSubview(placeLabel)
         labelStackView.addArrangedSubview(createdTimeLabel)
         
         itemImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.leading.equalToSuperview().inset(15)
-            $0.bottom.equalToSuperview().inset(15)
             $0.width.height.equalTo(103)
         }
         

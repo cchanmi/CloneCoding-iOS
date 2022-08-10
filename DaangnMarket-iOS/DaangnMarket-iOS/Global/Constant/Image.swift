@@ -10,7 +10,7 @@ import UIKit
 extension Constant {
     struct Image {
         // icn
-        static let icChatSelected = UIImage(named: "isChatSelected")
+        static let icChatSelected = UIImage(named: "icChatSelected")
         static let icChat = UIImage(named: "icChat")
         static let icCheckSelected = UIImage(named: "icCheckSelected")
         static let icCheck = UIImage(named: "icCheck")

@@ -14,40 +14,40 @@ final class HomeViewController: UIViewController {
     
     // MARK: - UI Property
     
-    let tableView = UITableView().then {
+    private lazy var tableView = UITableView().then {
         $0.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.identifier)
     }
     
-    var navigationBar = UIView().then {
+    private lazy var navigationBar = UIView().then {
         $0.backgroundColor = .white
     }
     
-    var navigationLine = UIView().then {
+    private lazy var navigationLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
-    var placeLabel = UILabel().then {
+    private lazy var placeLabel = UILabel().then {
         $0.text = "상봉제 1동"
         $0.font = .systemFont(ofSize: 18, weight: .bold)
         $0.sizeToFit()
     }
     
-    var searchButton = UIButton().then {
+    private lazy var searchButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icSearch, for: .normal)
     }
     
-    var menuButton = UIButton().then {
+    private lazy var menuButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icMenu, for: .normal)
     }
     
-    var bellButton = UIButton().then {
+    private lazy var bellButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icBell, for: .normal)
     }
     
-    var naviButtonStackView = UIStackView().then {
+    private lazy var naviButtonStackView = UIStackView().then {
         $0.axis = .horizontal
         $0.spacing = 16
         $0.distribution = .fillEqually
@@ -124,5 +124,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let detailVC = DetailViewController()
         detailVC.imageData = HomeDataModel.itemImages[indexPath.row].itemImage
         self.navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 133
     }
 }

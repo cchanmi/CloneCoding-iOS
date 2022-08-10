@@ -18,56 +18,56 @@ final class DetailViewController: UIViewController {
     
     // MARK: - UI Property
     
-    var navigationBar = UIView().then {
+    private lazy var navigationBar = UIView().then {
         $0.backgroundColor = .white
     }
     
-    var bottomView = UIView().then {
+    private lazy var bottomView = UIView().then {
         $0.backgroundColor = .white
     }
     
-    var bottomViewTopLine = UIView().then {
+    private lazy var bottomViewTopLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
-    var homeButton = UIButton().then {
+    private lazy var homeButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icBackHome, for: .normal)
         $0.addTarget(self, action: #selector(homeButtonDidTap), for: .touchUpInside)
     }
     
-    var moreButton = UIButton().then {
+    private lazy var moreButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icMore, for: .normal)
     }
     
-    var heartButton = UIButton().then {
+    private lazy var heartButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icHeartOff, for: .normal)
     }
     
-    var bottomViewmiddelLine = UIView().then {
+    private lazy var bottomViewmiddelLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
-    var priceLabel = UILabel().then {
+    private lazy var priceLabel = UILabel().then {
         $0.text = "16,000원"
         $0.font = .systemFont(ofSize: 16, weight: .bold)
     }
     
-    var priceProposal = UILabel().then {
+    private lazy var priceProposal = UILabel().then {
         $0.text = "가격제안불가"
         $0.font = .systemFont(ofSize: 13, weight: .bold)
         $0.textColor = .lightGray
     }
     
-    var priceStackView = UIStackView().then {
+    private lazy var priceStackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 3
         $0.alignment = .leading
     }
     
-    var chatListButton = UIButton().then {
+    private lazy var chatListButton = UIButton().then {
         $0.setTitle("채팅 목록 보기", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 15, weight: .bold)
@@ -75,70 +75,70 @@ final class DetailViewController: UIViewController {
         $0.layer.cornerRadius = 4
     }
     
-    var contentScrollerView = UIScrollView().then {
+    private lazy var contentScrollerView = UIScrollView().then {
         $0.backgroundColor = .white
         $0.showsVerticalScrollIndicator = false
     }
     
-    var contentView = UIView().then {
+    private lazy var contentView = UIView().then {
         $0.backgroundColor = .white
     }
     
-    var titleView = UIView().then {
+    private lazy var titleView = UIView().then {
         $0.backgroundColor = .white
     }
     
-    var profileImage = UIImageView().then {
+    private lazy var profileImage = UIImageView().then {
         $0.image = Constant.Image.image5
     }
     
-    var userNameLabel = UILabel().then {
+    private lazy var userNameLabel = UILabel().then {
         $0.text = "짠미"
         $0.font = .systemFont(ofSize: 16, weight: .bold)
     }
     
-    var placeLabel = UILabel().then {
+    private lazy var placeLabel = UILabel().then {
         $0.text = "개봉동"
         $0.font = .systemFont(ofSize: 12, weight: .light)
     }
     
-    var userLabelStackView = UIStackView().then {
+    private lazy var userLabelStackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 3
         $0.alignment = .leading
     }
     
-    var temperature = UILabel().then {
+    private lazy var temperature = UILabel().then {
         $0.text = "36.5℃"
         $0.font = .systemFont(ofSize: 16, weight: .bold)
         $0.textColor = .blue
     }
     
-    var progessBar = UIProgressView().then {
+    private lazy var progessBar = UIProgressView().then {
         $0.progress = 0.1
     }
     
-    var temperatureStackView = UIStackView().then {
+    private lazy var temperatureStackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 3
         $0.alignment = .leading
     }
     
-    var smaileImageView = UIImageView().then {
+    private lazy var smaileImageView = UIImageView().then {
         $0.image = Constant.Image.icFace
     }
     
-    var mannerTemperature = UILabel().then {
+    private lazy var mannerTemperature = UILabel().then {
         $0.text = "매너온도"
         $0.font = .systemFont(ofSize: 11, weight: .medium)
         $0.textColor = .systemGray2
     }
     
-    var titleViewBottomLine = UIView().then {
+    private lazy var titleViewBottomLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
-    let imageCollectionView: UICollectionView = {
+    private lazy var imageCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
@@ -151,45 +151,45 @@ final class DetailViewController: UIViewController {
         return collectionView
     }()
     
-    var statusButton = UIButton().then {
+    private lazy var statusButton = UIButton().then {
         $0.layer.borderWidth = 1
         $0.layer.borderColor = UIColor.systemGray4.cgColor
         $0.layer.cornerRadius = 4
     }
     
-    var statusLabel = UILabel().then {
+    private lazy var statusLabel = UILabel().then {
         $0.text = "판매중"
         $0.font = .systemFont(ofSize: 14, weight: .bold)
     }
     
-    var arrowImage = UIImageView().then {
+    private lazy var arrowImage = UIImageView().then {
         $0.image = Constant.Image.icArrow
     }
     
-    var itemNameLabel = UILabel().then {
+    private lazy var itemNameLabel = UILabel().then {
         $0.text = "최태성 한능검 심화 기출 500제"
         $0.font = .systemFont(ofSize: 19, weight: .bold)
     }
     
-    var categoryLabel = UILabel().then {
+    private lazy var categoryLabel = UILabel().then {
         $0.text = "도서/티켓/음반"
         $0.font = .systemFont(ofSize: 13, weight: .medium)
         $0.textColor = .systemGray2
     }
     
-    var createdTimeLabel = UILabel().then {
+    private lazy var createdTimeLabel = UILabel().then {
         $0.text = "5분 전"
         $0.font = .systemFont(ofSize: 13, weight: .medium)
         $0.textColor = .systemGray2
     }
     
-    var contentLabel = UILabel().then {
+    private lazy var contentLabel = UILabel().then {
         $0.text = "새 책입니다."
         $0.numberOfLines = 0
         $0.font = .systemFont(ofSize: 15, weight: .medium)
     }
     
-    var referenceLabel = UILabel().then {
+    private lazy var referenceLabel = UILabel().then {
         $0.text = "조회 2"
         $0.font = .systemFont(ofSize: 13, weight: .medium)
         $0.textColor = .systemGray2
@@ -203,6 +203,10 @@ final class DetailViewController: UIViewController {
         setScrollerView()
         setCollectionView()
         hiddenTabBar()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     // MARK: - @objc
