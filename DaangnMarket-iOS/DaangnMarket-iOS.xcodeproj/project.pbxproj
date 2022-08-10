@@ -19,13 +19,13 @@
 		4A634F4A289D9EA700F9AC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A634F48289D9EA700F9AC42 /* LaunchScreen.storyboard */; };
 		4A634F5F289DA14900F9AC42 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F5E289DA14900F9AC42 /* Network.swift */; };
 		4A634F63289DA15700F9AC42 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F62289DA15700F9AC42 /* Image.swift */; };
-		4A634F65289DA68200F9AC42 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A634F64289DA68200F9AC42 /* Constant.swift */; };
 		4A9916B8289F6D0600B329A7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916B7289F6D0600B329A7 /* TabBarController.swift */; };
 		4A9916BB289F6D5300B329A7 /* NeighborhoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916BA289F6D5300B329A7 /* NeighborhoodViewController.swift */; };
 		4A9916BD289F6D5D00B329A7 /* MyPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916BC289F6D5D00B329A7 /* MyPlaceViewController.swift */; };
 		4A9916BF289F6D6400B329A7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916BE289F6D6400B329A7 /* ChatViewController.swift */; };
 		4A9916C1289F6D6B00B329A7 /* MyDaangnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916C0289F6D6B00B329A7 /* MyDaangnViewController.swift */; };
 		4A9916C4289F6DD600B329A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9916C3289F6DD600B329A7 /* HomeViewController.swift */; };
+		4AC1628828A3699500118AEA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC1628728A3699500118AEA /* Constant.swift */; };
 		6C99098698419A3329642D41 /* Pods_DaangnMarket_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF2CF822AE236AF6B3C16A2 /* Pods_DaangnMarket_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,13 +44,13 @@
 		4A634F4B289D9EA700F9AC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A634F5E289DA14900F9AC42 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		4A634F62289DA15700F9AC42 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		4A634F64289DA68200F9AC42 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4A9916B7289F6D0600B329A7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4A9916BA289F6D5300B329A7 /* NeighborhoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodViewController.swift; sourceTree = "<group>"; };
 		4A9916BC289F6D5D00B329A7 /* MyPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceViewController.swift; sourceTree = "<group>"; };
 		4A9916BE289F6D6400B329A7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		4A9916C0289F6D6B00B329A7 /* MyDaangnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDaangnViewController.swift; sourceTree = "<group>"; };
 		4A9916C3289F6DD600B329A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4AC1628728A3699500118AEA /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7BF2CF822AE236AF6B3C16A2 /* Pods_DaangnMarket_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaangnMarket_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB47FCD8D3CDC2F9B7FD785 /* Pods-DaangnMarket-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaangnMarket-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CA8FC53D5EFADFF6FC41D95F /* Pods-DaangnMarket-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaangnMarket-iOS.release.xcconfig"; path = "Target Support Files/Pods-DaangnMarket-iOS/Pods-DaangnMarket-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		4A634F52289D9FD400F9AC42 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				4A634F64289DA68200F9AC42 /* Constant.swift */,
+				4AC1628728A3699500118AEA /* Constant.swift */,
 				4A634F62289DA15700F9AC42 /* Image.swift */,
 			);
 			path = Constant;
@@ -413,11 +413,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2ADA1B28A010B300B84576 /* ImageCollectionViewCell.swift in Sources */,
+				4AC1628828A3699500118AEA /* Constant.swift in Sources */,
 				4A9916BB289F6D5300B329A7 /* NeighborhoodViewController.swift in Sources */,
 				4A9916C1289F6D6B00B329A7 /* MyDaangnViewController.swift in Sources */,
 				4A191605289FB65400437002 /* HomeDataModel.swift in Sources */,
 				4A1915FF289F905900437002 /* UIView+.swift in Sources */,
-				4A634F65289DA68200F9AC42 /* Constant.swift in Sources */,
 				4A9916BF289F6D6400B329A7 /* ChatViewController.swift in Sources */,
 				4A9916B8289F6D0600B329A7 /* TabBarController.swift in Sources */,
 				4A2ADA16289FE2F400B84576 /* DetailViewController.swift in Sources */,
