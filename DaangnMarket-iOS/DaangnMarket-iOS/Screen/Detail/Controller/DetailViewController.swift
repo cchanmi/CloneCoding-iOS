@@ -202,6 +202,7 @@ final class DetailViewController: UIViewController {
         setUI()
         setScrollerView()
         setCollectionView()
+        hiddenTabBar()
     }
     
     // MARK: - @objc
@@ -215,6 +216,10 @@ final class DetailViewController: UIViewController {
     private func setCollectionView() {
         imageCollectionView.delegate = self
         imageCollectionView.dataSource = self
+    }
+    
+    private func hiddenTabBar() {
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     private func setUI() {
