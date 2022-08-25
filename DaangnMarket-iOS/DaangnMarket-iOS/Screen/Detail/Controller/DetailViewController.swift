@@ -18,15 +18,15 @@ final class DetailViewController: UIViewController {
     
     // MARK: - UI Property
     
-    private lazy var navigationBar = UIView().then {
+    private let navigationBar = UIView().then {
         $0.backgroundColor = .white
     }
     
-    private lazy var bottomView = UIView().then {
+    private let bottomView = UIView().then {
         $0.backgroundColor = .white
     }
     
-    private lazy var bottomViewTopLine = UIView().then {
+    private let bottomViewTopLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
@@ -36,38 +36,38 @@ final class DetailViewController: UIViewController {
         $0.addTarget(self, action: #selector(homeButtonDidTap), for: .touchUpInside)
     }
     
-    private lazy var moreButton = UIButton().then {
+    private let moreButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icMore, for: .normal)
     }
     
-    private lazy var heartButton = UIButton().then {
+    private let heartButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icHeartOff, for: .normal)
     }
     
-    private lazy var bottomViewmiddelLine = UIView().then {
+    private let bottomViewmiddelLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
-    private lazy var priceLabel = UILabel().then {
+    private let priceLabel = UILabel().then {
         $0.text = "16,000원"
         $0.font = .systemFont(ofSize: 16, weight: .bold)
     }
     
-    private lazy var priceProposal = UILabel().then {
+    private let priceProposal = UILabel().then {
         $0.text = "가격제안불가"
         $0.font = .systemFont(ofSize: 13, weight: .bold)
         $0.textColor = .lightGray
     }
     
-    private lazy var priceStackView = UIStackView().then {
+    private let priceStackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 3
         $0.alignment = .leading
     }
     
-    private lazy var chatListButton = UIButton().then {
+    private let chatListButton = UIButton().then {
         $0.setTitle("채팅 목록 보기", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.titleLabel?.font = .systemFont(ofSize: 15, weight: .bold)
@@ -75,70 +75,70 @@ final class DetailViewController: UIViewController {
         $0.layer.cornerRadius = 4
     }
     
-    private lazy var contentScrollerView = UIScrollView().then {
+    private let contentScrollerView = UIScrollView().then {
         $0.backgroundColor = .white
         $0.showsVerticalScrollIndicator = false
     }
     
-    private lazy var contentView = UIView().then {
+    private let contentView = UIView().then {
         $0.backgroundColor = .white
     }
     
-    private lazy var titleView = UIView().then {
+    private let titleView = UIView().then {
         $0.backgroundColor = .white
     }
     
-    private lazy var profileImage = UIImageView().then {
+    private let profileImage = UIImageView().then {
         $0.image = Constant.Image.image5
     }
     
-    private lazy var userNameLabel = UILabel().then {
+    private let userNameLabel = UILabel().then {
         $0.text = "짠미"
         $0.font = .systemFont(ofSize: 16, weight: .bold)
     }
     
-    private lazy var placeLabel = UILabel().then {
+    private let placeLabel = UILabel().then {
         $0.text = "개봉동"
         $0.font = .systemFont(ofSize: 12, weight: .light)
     }
     
-    private lazy var userLabelStackView = UIStackView().then {
+    private let userLabelStackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 3
         $0.alignment = .leading
     }
     
-    private lazy var temperature = UILabel().then {
+    private let temperature = UILabel().then {
         $0.text = "36.5℃"
         $0.font = .systemFont(ofSize: 16, weight: .bold)
         $0.textColor = .blue
     }
     
-    private lazy var progessBar = UIProgressView().then {
+    private let progessBar = UIProgressView().then {
         $0.progress = 0.1
     }
     
-    private lazy var temperatureStackView = UIStackView().then {
+    private let temperatureStackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 3
         $0.alignment = .leading
     }
     
-    private lazy var smaileImageView = UIImageView().then {
+    private let smaileImageView = UIImageView().then {
         $0.image = Constant.Image.icFace
     }
     
-    private lazy var mannerTemperature = UILabel().then {
+    private let mannerTemperature = UILabel().then {
         $0.text = "매너온도"
         $0.font = .systemFont(ofSize: 11, weight: .medium)
         $0.textColor = .systemGray2
     }
     
-    private lazy var titleViewBottomLine = UIView().then {
+    private let titleViewBottomLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
-    private lazy var imageCollectionView: UICollectionView = {
+    private let imageCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
@@ -151,45 +151,45 @@ final class DetailViewController: UIViewController {
         return collectionView
     }()
     
-    private lazy var statusButton = UIButton().then {
+    private let statusButton = UIButton().then {
         $0.layer.borderWidth = 1
         $0.layer.borderColor = UIColor.systemGray4.cgColor
         $0.layer.cornerRadius = 4
     }
     
-    private lazy var statusLabel = UILabel().then {
+    private let statusLabel = UILabel().then {
         $0.text = "판매중"
         $0.font = .systemFont(ofSize: 14, weight: .bold)
     }
     
-    private lazy var arrowImage = UIImageView().then {
+    private let arrowImage = UIImageView().then {
         $0.image = Constant.Image.icArrow
     }
     
-    private lazy var itemNameLabel = UILabel().then {
+    private let itemNameLabel = UILabel().then {
         $0.text = "최태성 한능검 심화 기출 500제"
         $0.font = .systemFont(ofSize: 19, weight: .bold)
     }
     
-    private lazy var categoryLabel = UILabel().then {
+    private let categoryLabel = UILabel().then {
         $0.text = "도서/티켓/음반"
         $0.font = .systemFont(ofSize: 13, weight: .medium)
         $0.textColor = .systemGray2
     }
     
-    private lazy var createdTimeLabel = UILabel().then {
+    private let createdTimeLabel = UILabel().then {
         $0.text = "5분 전"
         $0.font = .systemFont(ofSize: 13, weight: .medium)
         $0.textColor = .systemGray2
     }
     
-    private lazy var contentLabel = UILabel().then {
+    private let contentLabel = UILabel().then {
         $0.text = "새 책입니다."
         $0.numberOfLines = 0
         $0.font = .systemFont(ofSize: 15, weight: .medium)
     }
     
-    private lazy var referenceLabel = UILabel().then {
+    private let referenceLabel = UILabel().then {
         $0.text = "조회 2"
         $0.font = .systemFont(ofSize: 13, weight: .medium)
         $0.textColor = .systemGray2

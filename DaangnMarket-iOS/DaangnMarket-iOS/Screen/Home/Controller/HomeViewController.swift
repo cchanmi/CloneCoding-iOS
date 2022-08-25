@@ -14,40 +14,40 @@ final class HomeViewController: UIViewController {
     
     // MARK: - UI Property
     
-    private lazy var tableView = UITableView().then {
+    private let tableView = UITableView().then {
         $0.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.identifier)
     }
     
-    private lazy var navigationBar = UIView().then {
+    private let navigationBar = UIView().then {
         $0.backgroundColor = .white
     }
     
-    private lazy var navigationLine = UIView().then {
+    private let navigationLine = UIView().then {
         $0.backgroundColor = .systemGray5
     }
     
-    private lazy var placeLabel = UILabel().then {
+    private let placeLabel = UILabel().then {
         $0.text = "상봉제 1동"
         $0.font = .systemFont(ofSize: 18, weight: .bold)
         $0.sizeToFit()
     }
     
-    private lazy var searchButton = UIButton().then {
+    private let searchButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icSearch, for: .normal)
     }
     
-    private lazy var menuButton = UIButton().then {
+    private let menuButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icMenu, for: .normal)
     }
     
-    private lazy var bellButton = UIButton().then {
+    private let bellButton = UIButton().then {
         $0.setTitle("", for: .normal)
         $0.setImage(Constant.Image.icBell, for: .normal)
     }
     
-    private lazy var naviButtonStackView = UIStackView().then {
+    private let naviButtonStackView = UIStackView().then {
         $0.axis = .horizontal
         $0.spacing = 16
         $0.distribution = .fillEqually

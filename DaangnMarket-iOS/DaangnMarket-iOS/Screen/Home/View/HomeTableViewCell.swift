@@ -16,34 +16,34 @@ final class HomeTableViewCell: UITableViewCell {
     
     // MARK: - Property
     
-    var itemImageView = UIImageView().then {
+    let itemImageView = UIImageView().then {
         $0.image = Constant.Image.image1
         $0.contentMode = .scaleAspectFit
     }
     
-    var placeLabel = UILabel().then {
+    let placeLabel = UILabel().then {
         $0.text = "동대문구 제기동"
         $0.font = .systemFont(ofSize: 11, weight: .medium)
         $0.textColor = .lightGray
     }
     
-    var itemNameLable = UILabel().then {
+    let itemNameLable = UILabel().then {
         $0.text = "기본 셔링 반팔티"
         $0.font = .systemFont(ofSize: 15, weight: .regular)
     }
     
-    var createdTimeLabel = UILabel().then {
+    let createdTimeLabel = UILabel().then {
         $0.text = "1분 전"
         $0.font = .systemFont(ofSize: 11, weight: .medium)
         $0.textColor = .lightGray
     }
     
-    var priceLabel = UILabel().then {
+    let priceLabel = UILabel().then {
         $0.text = "25,000원"
         $0.font = .systemFont(ofSize: 15, weight: .bold)
     }
     
-    var labelStackView = UIStackView().then {
+    let labelStackView = UIStackView().then {
         $0.axis = .horizontal
         $0.spacing = 10
     }
